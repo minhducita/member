@@ -1,0 +1,891 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,p,form,input,select,option,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,address{
+margin: 0;
+padding: 0;
+font-size: 100%;
+font-weight: normal;
+font-style: normal;
+line-height: 1.5;
+}
+
+img {border:0;}
+
+ul {list-style: none;}
+.flex{
+	display: flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	-webkit-flex-direction: row; /* Safari */
+	flex-direction: row;
+	-webkit-justify-content: space-around; /* Safari */
+	justify-content:         space-around;
+}
+
+
+body{
+font-size: 62.5%;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+body{
+	color: #000000;
+	background-color: #ffffff;
+	background-image: url(../images/body-bg.jpg);
+	background-repeat: repeat-x;
+}
+
+
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+p {
+font-size:12px;
+}
+
+a {
+color: #000000;
+text-decoration: underline;
+}
+
+a:visited {
+color: #000000;
+text-decoration: underline;
+}
+
+a:hover {
+color: #666666;
+text-decoration: none;
+}
+
+.rk1 {
+	margin-bottom: 2em;
+}
+
+/*************************************************************/
+/*------------------- CALENDAR DISPLAY ----------------------*/
+/*************************************************************/
+#place-date-seminar {
+	position:relative;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding: 10px 0 10px 10px;;
+	font-size:30px;
+	color:orange;		
+}
+
+#seminar-calendar {
+	width: 100%;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+#seminar-calendar tr.empty_cell td {
+	height:10px;
+}
+
+#seminar-calendar th {
+	padding: 5px 10px;
+	background-color:orange;
+	color:white;
+	font-size:20px;
+	font-weight:bolder;
+}
+
+#seminar-calendar .data_table td {
+	border:1px solid #CCC;
+	padding: 5px 5px;
+	background-color:white;
+	font-size:12px;
+	font-weight: bold;
+	vertical-align:top;
+	height:130px;
+	width:14%;
+}
+
+#seminar-calendar .data_table td span.date_number {
+	font-size:18px;
+	color:#CCC;
+}
+
+#seminar-calendar .data_table td span.date_saturday {
+	font-size:18px;
+	color:#00008B;
+}
+
+#seminar-calendar .data_table td span.date_sunday {
+	font-size:18px;
+	color:#FF0000;
+}
+
+#seminar-calendar .data_table td.following_month span.date_number,
+#seminar-calendar .data_table td.actual_month-following_month span.date_number{
+	padding-top:7px;
+	padding-bottom:2px;
+	font-size:11px;
+	color:#CCC;
+	display:inline-block;
+/*	height:27px;*/
+}
+
+#seminar-calendar .data_table td.following_month span.date_saturday,
+#seminar-calendar .data_table td.actual_month-following_month span.date_saturday {
+	padding-top:7px;
+	padding-bottom:2px;
+	font-size:11px;
+	color:#00008B;
+	display:inline-block;
+	/*height:27px;*/
+}
+
+#seminar-calendar .data_table td.following_month span.date_sunday,
+#seminar-calendar .data_table td.actual_month-following_month span.date_sunday {
+	padding-top:7px;
+	padding-bottom:2px;
+	font-size:11px;
+	color:#FF0000;
+	display:inline-block;
+	/*height:27px;*/
+}
+
+
+/*** selected day from module ***/
+/*------------------------------*/
+#seminar-calendar .data_table td span.chosen_day {
+	font-size:18px;
+	color:#FF8000;
+}
+
+#seminar-calendar .data_table td span.chosen_day-following_month {
+	font-size:11px;
+	color:#FF8000;
+	display:inline-block;
+	height:27px;
+}
+
+#seminar-calendar td#selected_day {
+	background-color:#FFA;
+	border:2px dashed #FFDFAA;
+}
+/*******************************/
+#seminar-calendar td.following_month {
+	background-color:#FFF4EA;
+}
+
+#seminar-calendar td.not_actual_month {
+	background-color: #F5F5F5;
+}
+
+#month_navigation span a{
+	font-size:14px;
+	color:#555555;
+}
+
+div#month_navigation {
+	width:100%;
+	text-align:center;
+}
+
+#month_navigation span {
+	display:inline-block;
+}
+
+#month_navigation span#previous_month {
+	float:left;
+}
+
+#month_navigation span#next_month {
+	float:right;
+}
+
+span.broadcast, div.no_broadcast { /*<div>*/
+	height:16px;
+	width:16px;
+	float:right;
+	margin-top:6px;
+}
+.tooltip_broadcast, .icon_info_broadcast, span.broadcast { /*<div>*/
+	background:url(images/camera.png) no-repeat center;
+}
+
+div.option_osusume, div.option_full  {
+	position:relative;
+	height:16px;
+	width:16px;
+	float:left;
+}
+.tooltip_option_osusume, .icon_info_osusume, div.option_osusume {
+	background:url(images/hoshi.png) right no-repeat;
+}
+
+.tooltip_option_full, .icon_info_full, div.option_full {
+	background:url(images/full.png) right no-repeat;
+}
+
+div.option_shinchyaku {
+	position:relative;
+	height:16px;
+	width:25px;
+	float:left;
+}
+.tooltip_option_shinchyaku, .icon_info_shinchyaku, div.option_shinchyaku {
+	background:url(images/new.png) right no-repeat;
+}
+
+div.description_seminar {
+	position:relative;
+	font-size:10px;
+	text-align:center;
+}
+
+div.name_seminar {
+	position:relative;
+	cursor: pointer;
+	padding:1px;
+	margin:0px 0px 5px 0px;
+	text-align:center;
+
+	border-bottom:1px solid #cccccc;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.fullybooked.name_seminar {
+	border: 1px dashed gray;
+	background-color: white;
+	font-weight:bold;
+	color:gray;	
+}
+div.fullybooked.description_seminar {
+	color:black;
+	font-weight:bold;
+	height:16px;
+}
+
+div._shinchyaku.description_seminar,
+div._osusume.description_seminar{
+	height:16px;
+}
+
+
+/*------- flags  display --------*/
+/*-------------------------------*/
+
+span.list_flag { /*<div>*/
+	position:relative;
+	display:inline-block;
+	margin-left:5px;
+}
+span.list_flag span { /*<div>*/
+	vertical-align: top;
+}
+
+span.list_flag span, .flag_information { /*<div>*/
+	position:relative;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-right:2px;
+}
+.flag_us, .tooltip_flag_us {
+	background:url(images/us.png) no-repeat center;
+}
+.flag_au, .tooltip_flag_au {
+	background:url(images/au.png) no-repeat center;
+}
+.flag_nz, .tooltip_flag_nz {
+	background:url(images/nz.png) no-repeat center;
+}
+.flag_uk, .tooltip_flag_uk {
+	background:url(images/uk.png) no-repeat center;
+}
+.flag_fr, .tooltip_flag_fr {
+	background:url(images/fr.png) no-repeat center;
+}
+.flag_dk, .tooltip_flag_dk {
+	background:url(images/dk.png) no-repeat center;
+}
+.flag_de, .tooltip_flag_de {
+	background:url(images/de.png) no-repeat center;
+}
+.flag_ca, .tooltip_flag_ca {
+	background:url(images/ca.png) no-repeat center;
+}
+.flag_eu, .tooltip_flag_eu {
+	background:url(images/eu.png) no-repeat center;
+}
+.flag_wd, .tooltip_flag_wd, span.list_flag span.flag_wd {
+	background:url(images/wd.png) no-repeat center;
+	width : 32px;
+	height : 21px;
+	margin-top : -2px;
+}
+
+div#tooltip span {
+	position:relative;
+	display:inline-block;
+	width:32px;
+	height:32px;
+}
+
+/*  listing of the day while clicking on an event   */
+/*---------------------------------------------------*/
+
+div.day_information{
+	font-size:13px;
+	display:none;
+	text-align:left;
+	width:780px;
+}
+
+#date_information {
+	padding:2px;
+	margin:10px;
+	background-color:#FFA500;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+}
+/*
+.left_part_detail {
+	position:relative;
+	border:1px solid blue;
+	display:inline-block;
+	width:auto;	
+	
+}*/
+
+.c_img{
+	color:red;
+	font-size:11pt;
+	font-weight:bold;
+	display:inline-block;
+	margin-left:40px;
+}
+.c_btn{
+	width:115px;
+	text-align:right;
+	display:inline-block;
+}
+
+.btn_close_info {
+	text-align:left;
+	padding-left:10px;
+	padding-top: 10px;
+}
+
+.open {
+	display:block;
+	font-size:9pt;
+	font-weight:bold;
+	color : orange;
+	cursor:pointer;
+	margin-left:158px;
+
+}
+
+.open_only  {
+	display:inline-block;
+	font-size:9pt;
+	font-weight:bold;
+	color : orange;
+	cursor:pointer;
+	margin-left:40px;
+}
+
+.det {
+	text-align:left;
+	margin:5px 0 10px 50px;
+	padding: 5px 0 13px 12px;
+	border-left:2px dotted;
+	display:none;
+	width:600px;
+}
+/*
+#booking_display {
+	margin-left:250px;
+	display:inline-block;
+	border:1px solid brown;
+}
+#booking_nodisplay {
+	margin-left:150px;
+	display:inline-block;
+}*/
+
+.square_color {
+	width:5px;
+	height:auto;
+	display:inline-block;
+	
+}
+div.title_line {
+	text-align:left;
+	display:inline-block;
+	margin-left:20px;
+}
+table.table_list {
+	margin-left:14px; 
+	width:750px;
+}
+.title_line span {
+	display:inline-block;
+	margin-left:5px;
+	vertical-align:middle;
+}
+
+span.title_style {
+	width:auto;
+	max-width:560px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.icon_info_broadcast, .icon_info_osusume , .icon_info_full  {
+	height:16px;
+	width:16px;
+}
+.icon_info_shinchyaku {
+	height:20px;
+	width:25px;
+}
+.new-element{
+	position: absolute;
+	float: left;
+	top:-8px;
+	right:-8px;
+	padding: 0;
+	background: url(images/new-rounded.png) no-repeat left top;
+	height: 24px;
+	width: 24px;
+	text-indent: -99999px;
+}
+
+/****************************** USED TO BE ON HTML PAGE **************************/
+
+.button_yoyaku	{
+	background-color: navy;
+	color: white;
+	cursor: pointer;
+	padding: 0 5px 0 5px;
+	margin: 0 0 3px 0;
+	font-weight: bold;
+}
+.button_submit	{
+	background: url(../images/button_submit.png) no-repeat 0 0;
+	padding-left: 16px;
+	cursor: pointer;
+}
+
+.button_cancel	{
+	background: url(../images/button_cancel.png) no-repeat 0 0;
+	padding-left: 16px;
+	cursor: pointer;
+}
+
+.button_next	{
+	background: url(../images/button_next.png) no-repeat 0 0;
+	padding-left: 16px;
+	cursor: pointer;
+}
+
+.shibori	{
+	font-size: 10pt;
+}
+
+
+#feedbox {
+	background-color: lightgreen;
+	border-top: 1px solid #333;
+	text-align: center;
+	padding: 16px 0;
+	font-size:11pt;
+}
+
+#feedbox form {
+  margin: 8px 0;
+}
+
+#feedshow	{
+	cursor : pointer;
+}
+
+tr.clickable:hover td {
+	background: #ecf2fa ;
+	cursor: pointer;
+}
+
+img.disNone { display:none; }
+
+/********************************************/
+/**********  CONTENTMAIN ****************/
+/********************************************/
+#contentsbox {
+    position: relative;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 25px;
+}
+/***************************************/
+
+#contentsbox {
+	position:relative;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 25px;
+}
+
+#contentsbox-top {
+	background:url(images/contentsbox-bgtop-middle.gif) repeat-x bottom;
+	height:11px;
+	margin-left:5px;
+	margin-right:3px;
+}
+
+#contentsbox-top-left {
+	background:url(images/contentsbox-bgtop-left.gif) no-repeat bottom left;
+	height:11px;
+}
+#contentsbox-top-right{
+	background:url(images/contentsbox-bgtop-right.gif) no-repeat bottom right;
+	height:11px;
+
+}
+/***********************************************/
+/*--------------------------------------------*/
+#contents {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #000000;
+	border-left-color: #000000;
+	width: 960px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: 5px;
+	background-color: #FFFFFF;
+	background-position: -1px 0px;
+	float: left;
+	overflow: hidden;
+	background-image: url(../images/bg.gif);
+	background-repeat: repeat-y;
+}
+/*
+#maincontent{
+	float: left;
+	width: 100%;
+}
+*/
+#maincontent .new-sec-title{
+	display: block;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fafafa;
+    border-top: 2px solid #2A6692;
+    background: -webkit-linear-gradient(top,#fdfdfd,#e4e2e2);
+    background: transform-linear-gradient(top,#fdfdfd,#e4e2e2);
+    background: -moz-linear-gradient(top,#fdfdfd,#e4e2e2);
+    padding: 2px 10px 0px 10px;
+    margin-top: 10px;
+    margin-top: -1px;
+    border: 1px solid #cbcbcb;
+    border-top: 2px solid #246AA0;
+}
+#maincontent .new-sec-title img{
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+	width: 22px;
+}
+#maincontent .new-sec-title span{
+	display: block;
+	margin-top: 2px;
+}
+#maincontent .sec-newtitle{
+    font-size: 14px;
+    color: #000033;
+    background-image:  url(../../images/sec-newtitle.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    width: 95%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#maincontent h2 {
+    height: 31px;
+    width: 670px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    clear: both;
+    float: left;
+}
+#maincontent .text01 ,#maincontent .newstyleul {
+    font-size: 12px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 1em;
+    margin-left: 0em;
+    clear: both;
+    list-style: square inside;
+    padding-left: 20px;
+}
+
+#maincontent .newstyleul li{
+	line-height: 2em;
+}
+/* Style top page */
+#topic-path {
+    float: left;
+    width: 680px;
+    background-color: #ebebeb;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border-radius: 3px;
+}
+#text-home {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 9px;
+}
+/* End Style top page */
+/*=====new-content-visa====*/
+.content-visa-new ul li {
+    padding: 5px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.content-visa-new ul {
+    clear: both;
+    margin: 20px 0 20px 20px;
+}
+.content-visa-new p{
+	margin-left: 10px;
+	font-size: 13px;
+	line-height: 25px;
+}
+.link-vs{
+	word-wrap: break-word;
+	font-size: 13px;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	font-weight: normal;
+	margin-left: 20px;
+}
+.link-vs:before{
+	content: "";
+	position: absolute;
+	background-color: #000;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	top: 6px;
+	left: 10px;
+}
+.content-visa-new .title-visa{
+		margin: 20px 0 20px  !important;
+	    font-size: 14px;
+	    font-weight: bold;
+}
+.content-visa-new span{
+	font-size: 13px;
+}
+.content-visa-new .yellow-box{
+	width: 96%;
+    background-color: #FFFFCC;
+    padding: 15px 0 15px 15px;
+    margin: 20px 0 20px 10px;
+}
+.content-visa-new .yellow-box p{
+	margin: 0;
+}
+/* check register serminar */
+.btn_send{
+	background-color: #F39800;
+	width:200px;
+	height:40px; 
+	font-size:11pt;
+	color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn_send:hover{
+	width:198px;
+	height:38px; 
+	filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+.btn_cancel{
+    width: 200px;
+    height: 40px;
+    font-size: 11pt;
+    cursor: pointer;
+}
+.btn_cancel:hover{
+	width:198px;
+	height:38px; 
+	filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+.p_sendbutton {
+	height:40px; 
+}
+.moji{
+	margin:20px 0 0 0; 
+	padding:10px 20px 10px 20px; 
+	border:2px navy dotted;
+	font-size:11pt; 
+	font-weight:bold;
+}
+.aboutus_seminar {
+	margin: 20px 0 0 0;
+    padding: 10px 20px 10px 0px;
+    font-size: 11pt;
+}
+.aboutus_seminar p{ 
+	font-size: 11pt;
+}
+.service_seminar {
+	margin: 20px 0 0 0;
+    float: left;
+    width: 100%;
+}
+.service_seminar span {
+	font-size: 11pt;
+	font-weight:bold;
+    padding: 15px;
+    width: 25%;
+    height: 35px;
+    float: left;
+    margin-left: 10px;
+    border: 2px #6192fe solid;
+    display: block;
+    border-radius: 15px;
+	text-align:center;
+}
+.moji_butonmem  {
+	  margin-top: 20px;
+	  width:100%;
+}
+.moji_butonmem a{
+  background: -webkit-linear-gradient(#ffd56e , #ff2700 );
+   background: -o-linear-gradient(#ffd56e , #ff2700 );
+   background: linear-gradient(#ffd56e , #ff2700 );
+   margin: auto;
+   padding:15px;
+   display:block;
+   text-align:center;
+   text-decoration:none;
+   width: 55%;
+   -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.moji_butonmem a:hover {
+	padding:14px;
+	filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+.moji_butonmem .moji_span {
+	color:yellow;
+	    font-size: 14pt;
+}
+.moji_span2 {
+	color:#fff;
+	font-size:18pt;
+}
+
+div.banner-rdirect {
+	position: fixed;
+    bottom: 0px;
+    z-index: 10000;
+	background: #000000;
+	color: #ffffff;
+	font-size: 2em;
+	width: 100%;
+}
+.banner-rdirect-flat {
+	position: relative;
+	padding: 20px 25%;
+}
+div.banner-rdirect h3 {
+	line-height: 1.2;
+}
+div.banner-rdirect div.mem-content {
+	padding-top: 35px;
+}
+div.banner-rdirect div.mem-content a {
+	color: #fff;
+}
+div.banner-rdirect div.mem-content .mem-text{
+	font-weight: bolder;
+	float: left;
+	margin-top: -7px;
+}
+div.banner-rdirect div.mem-content .mem-arrow {
+	width: 75px;
+	height: 100%;
+	float: left;
+}
+div.banner-rdirect div.mem-content .mem-button {
+	float: left;
+	border-radius: 10px;
+	margin-top: -20px;
+	padding:10px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	background: rgba(250,228,82,1);
+	background: -moz-linear-gradient(top, rgba(250,228,82,1) 0%, rgba(255,97,46,0.98) 75%, rgba(255,97,46,0.98) 76%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,228,82,1)), color-stop(75%, rgba(255,97,46,0.98)), color-stop(76%, rgba(255,97,46,0.98)));
+	background: -webkit-linear-gradient(top, rgba(250,228,82,1) 0%, rgba(255,97,46,0.98) 75%, rgba(255,97,46,0.98) 76%);
+	background: -o-linear-gradient(top, rgba(250,228,82,1) 0%, rgba(255,97,46,0.98) 75%, rgba(255,97,46,0.98) 76%);
+	background: -ms-linear-gradient(top, rgba(250,228,82,1) 0%, rgba(255,97,46,0.98) 75%, rgba(255,97,46,0.98) 76%);
+	background: linear-gradient(to bottom, rgba(250,228,82,1) 0%, rgba(255,97,46,0.98) 75%, rgba(255,97,46,0.98) 76%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fae452', endColorstr='#ff612e', GradientType=0 );
+}
+div.banner-rdirect div.mem-content .mem-button span {
+	color: #ffff48;
+	font-size: 0.7em;
+}
+.clearfixx {
+	height: 1px;
+	width: 100%;
+	clear: both;
+}
+.banner-rdirect-flat button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	background: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+}

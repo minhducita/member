@@ -1,0 +1,494 @@
+/****************************************************************************************************/
+/************************************* J A W - S E M I N A R*****************************************/
+/****************************************************************************************************/
+.form-jawhm h1, .form-jawhm .tab-form, .form-jawhm .red,.form-jawhm .redd, .form-jawhm .left,.form-jawhm p ,.form-jawhm .right , .form-jawhm .double,.form-jawhm input, .form-jawhm select , .form-jawhm textarea{
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+.blockPage #form2::-webkit-scrollbar {
+    width: 10px;
+}
+.blockPage #form2::-webkit-scrollbar-button{
+    height:9px;
+    background:#e1f1f6;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.blockPage #form2::-webkit-scrollbar-track {
+    background:#e1f1f6;
+    padding-right:10px;
+}
+.blockPage #form2::-webkit-scrollbar-thumb {
+    background:#78a5d3; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.blockPage #form2::-webkit-scrollbar-thumb:hover{
+    background:#e3ebf5;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.blockPage #form2::-webkit-scrollbar-thumb:window-inactive {
+    background: linear-gradient(#A0D800, #81B602);
+}
+.blockPage #form2 {
+    position: fixed;
+    width: 650px;
+    top: 12px;
+	overflow:hidden;
+    bottom: 10px;
+    background: #fff;
+    margin-left: -25px;
+    scrollbar-face-color:#78a5d3;
+    scrollbar-highligh-color:red;
+    scrollbar-shadow-color:red;
+    scrollbar-3dlight-color:red;
+    scrollbar-arrow-color:#78a5d3;
+    scrollbar-track-color:#e1f1f6;
+    scrollbar-darkshadow-color:red;
+}
+.clear{
+    clear: both;
+}
+.flex{
+    display: flex;
+    -webkit-display: flex;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content: space-between;
+}
+.form-jawhm{
+    width: auto;
+    text-align: left;
+	 overflow-x: hidden;
+	overflow-y: auto;
+   
+}
+.form-jawhm h1{
+	font-size: 17px;
+    font-weight: bold;
+    z-index: 99;
+    line-height: 55px;
+    padding-left: 25px;
+    width: 31%;
+    background-color: #4082C4;
+	text-align:center;
+}
+.form-jawhm .tab-form:first-child{
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+    background: #78a5d3;
+    color: #fff;
+    width: 650px;
+    margin-left:0px;
+}
+.form-jawhm .tab-form:first-child span.fa{
+	font-size:15px;
+	height:15px;
+	    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.form-jawhm .tab-form:first-child span.fa:hover{
+    background: #fff;
+    color: #78a5d3;
+    cursor: pointer;
+}
+.form-jawhm .tab-form.top3 .left{
+    border: solid 2px #78a5d3;
+    border-right: none;
+}
+.form-jawhm .tab-form.top3 .right {
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 2px #78a5d3;
+    border-left: none;
+}
+.form-jawhm .tab-form .info_seminar{
+	/*display: inherit;*/
+    padding-bottom: 10px;
+    padding-top: 15px;
+    width: 60%;
+    text-align: center;
+}
+.form-jawhm .tab-form{
+    width: 610px;
+    margin:0px 20px;
+    display: flex;
+    -webkit-display: flex;
+}
+.form-jawhm .tab-form .red{
+    background: #ffb4bf!important;
+    border: none!important;
+    color: #ff1100!important;
+    margin-top: 10px;
+    display: block;
+    padding: 10px 0px;
+}
+.form-jawhm .tab-form .redd{
+    background: #ff1100!important;
+    color: #fff !important;
+    width: 40px;
+    display: block;
+    text-align: center;
+}
+.form-jawhm .tab-form .left p , .form-jawhm .tab-form p.left{
+    font-weight: bold;
+    font-size: 12px !important;
+}
+.form-jawhm .tab-form .left p:first-child{
+        width:97px;
+    }
+.form-jawhm .tab-form .left{
+    width: 30%;
+    background:#e3ebf5;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: solid 1px #fff;
+    display: flex;
+    font-weight: bold;
+    -webkit-align-items: center; /* Safari */
+    align-items:         center;
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content:         space-between;
+}
+.form-jawhm .tab-form .right , .form-jawhm .tab-form .double{
+    width: 70%;
+    vertical-align:middle;
+    border-bottom: solid 1px #78a5d3;
+    padding: 5px 10px;
+    font-size: 11px;
+}
+.form-jawhm .tab-form:nth-child(3) .double{
+    border-top: solid 1px #78a5d3;
+}
+.form-jawhm .top {
+    border-bottom:  solid 1px #78a5d3;
+}
+.form-jawhm .tab-form input[type=text] , .form-jawhm .tab-form .right input[type=email], .form-jawhm .tab-form .right input[type=tel], .form-jawhm .tab-form .right select , .form-jawhm .tab-form .right textarea{
+    width: 100%;
+    border: solid 1px #ebebeb;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    display: block;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+.form-jawhm .tab-form .right select{
+    width: 40%;
+}
+.form-jawhm .tab-form .right textarea{
+    min-height: 60px;
+    margin-bottom: 0px;
+}
+.form-jawhm .tab-form .double{
+    -webkit-justify-content: space-between; /* Safari */
+    justify-content: space-between;
+}
+.form-jawhm .tab-form .double:first-child{
+    border-top: solid 1px #78a5d3;
+}
+.form-jawhm .tab-form .double input{
+    width: 49%;
+    border: solid 1px #ebebeb;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.form-jawhm .tab-form .right p{
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.form-jawhm .tab-form:nth-child(5) .right p{
+        font-size: 11px;
+    }
+.form-jawhm .tab-form .right li{
+    display: block;
+    font-size: 12px;
+}
+.form-jawhm .tab-form .right input[type=checkbox]{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: -3px;
+}
+.form-jawhm .tab-form .right label{
+    display: block;
+    margin-top: 8px;
+    margin-left: 0px;
+    font-size: 11px;
+}
+.form-jawhm .bottom{
+    background: #e1f1f6;
+    padding: 13px;
+    margin: 10px 20px;
+    font-weight: bolder !important;
+    font-size: 11px;
+}
+.form-jawhm .tab-form input[type=text]:hover , .form-jawhm .tab-form input[type=email]:hover ,.form-jawhm .tab-form input[type=tel]:hover ,.form-jawhm .tab-form textarea:hover{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    border-bottom: solid 5px #ebebeb;
+}
+.form-jawhm .tab-form input[type=text]:focus{
+    border-bottom: solid 3px #ebebeb;
+}
+/*******************************************************************************/
+/*********************************** Check box *********************************/
+/*******************************************************************************/
+.form-jawhm #style-checkbox[type="checkbox"] {
+    display:none;
+}
+.form-jawhm #style-checkbox[type="checkbox"] + label{
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/jawhm-form/check-jawhm.png) left top no-repeat;
+    cursor:pointer;
+}
+.form-jawhm #style-checkbox[type="checkbox"]:checked + label{
+    background:url(../images/jawhm-form/check-jawhm.png) -14px top no-repeat;
+}
+.seminar_btn{
+	width:43%;
+	height:76px;
+	background:#FFF;
+	position:fixed;
+	text-align:center;
+	z-index:1;
+}
+#div_wait{
+	text-align:center;
+	padding: 10px 0px;
+    display: block;
+    margin: 15px auto;
+}
+.blockUI.blockMsg.blockPage.nonepopup{
+	background-color:initial !important;
+	border:none !important;
+	height:0px;
+}
+/*******************************************************************************/
+/******************************* hack css safari *******************************/
+/*******************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    /*******************/
+    /* hack css safari */
+    /*******************/
+    ::i-block-chrome,.blockPage #form2{
+        width: 700px;
+        max-height: 910px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form.top3{
+        border:solid 2px #78a5d3;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form.top3 .right{
+        border:none;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form.top3 .left {
+        border:none;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form{
+        width: 660px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:first-child{
+        height: 55px;
+        width: 700px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form h1{
+        float: left;
+        margin-bottom: 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form span.fa{
+        float: right;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .left.red{
+        text-align: left;
+        margin-right: -5px;
+        padding: 12px 20px 12px 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(4) .right.red{
+        padding: 11px 5px 8px 5px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .left{
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+    }
+    ::i-block-chrome, .form-jawhm .tab-form .left p:nth-child(6){
+        padding: 50px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .left p:first-child{
+        float: left;
+        padding: 11px 0px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .left p:last-child{
+        float: right;
+        margin-top: 10px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form.top3{
+        max-height: 55px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form.top3 p.left{
+        padding: 14px 0px 14px 20px;
+        margin-right: -5px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(4) .left p:first-child{
+      
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(4) .left p:last-child{
+        margin-top: 12px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(5) .right{
+        padding: 12px 10px 15px 10px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(5) .left p:first-child{
+        
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(5) .left p:last-child{
+        margin-top: 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(6) .left p:first-child{
+        padding: 24px 0px 25px 0px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(6) .left p:last-child{
+        margin-top: 24px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(7) .right ul{
+
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(8) p.left{
+        padding: 33px 0px 32px 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(9) p.left{
+        padding: 10px 0px 8px 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(9) .right ul{
+
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(10) p.left{
+        padding: 15px 0px 15px 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form:nth-child(11) p.left{
+        padding: 25px 0px 25px 20px;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .right , .form-jawhm .tab-form .double{
+        display: inline-block;
+        width: 68.5%;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .double input[type=text]:first-child{
+        float: left;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .double input[type=text]:last-child{
+        float: right;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .right ul{
+        display: inline-block;
+        vertical-align: top;
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .right label{
+        display: inline-block;
+        vertical-align: top; 
+    }
+    ::i-block-chrome,.form-jawhm .tab-form .right textarea{
+        max-height: 30px;
+    }
+}
+.jawhm-button {
+	padding: 5px 0px !important;
+	width: 150px;
+	border: none;
+	box-shadow: 0px 3px  5px #999;
+	display: block;
+	text-align: center;
+	background: #fca84e !important;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px auto;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.jawhm-button a{
+	text-decoration: none;
+	color: #fff !important;
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.jawhm-button:hover, .jawhm-button:focus, .jawhm-button:active {
+	cursor: pointer;
+	box-shadow: 0px -3px  5px #999;
+	-webkit-animation-name: hvr-hang-sink, hvr-hang;
+	animation-name: hvr-hang-sink, hvr-hang;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
+/*regulative_seminar*/
+.regulative_seminar{
+	line-height:24px;
+}
+.regulative_seminar span{
+	color: red;
+    margin-top: 5px;
+    display: block;
+}

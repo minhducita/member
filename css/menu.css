@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lh_top {
+	width:224px;
+	height:25px;
+	background:url(images/menu_color.gif) left bottom repeat-x;
+	margin-bottom:1px;
+}
+#pink-menu,#orange-menu{
+	float:left
+}
+.lh_none{
+	clear:both;
+}
+.lh_top_left {
+	height:25px;
+	line-height:25px;
+	background:url(images/puce.jpg) left center no-repeat;
+	color:white;
+	font-size:1.2em;
+	padding-left:20px;
+}
+.lh_alonetop,
+.lh_none,
+.lh_bottom,
+.lh_alone{
+	width:226px;
+	margin-bottom:1px;
+	background:#ffffff
+}
+.lh_none_small,
+.lh_bottom_small{
+	margin-top:-1px;
+	width:224px;
+	height:26px;
+}
+
+.lh_bottom, 
+.lh_bottom_small,
+.lh_alone {
+	overflow:hidden;
+}
+
+.lh_alonetop a,
+.lh_none a,
+.lh_bottom a,
+.lh_alone a {
+	display:block;
+	width:213px;
+	border-left:1px solid #CBCBCB;
+	border-right:1px solid #CBCBCB;
+	line-height:18px;
+	text-decoration:none;
+	font-size:1.2em;
+	background-color:#ffffff;
+	background:url(images/menu_color/white.jpg) left bottom repeat-x;
+	padding:10px 0px 10px 10px;
+}
+
+.lh_alonetop a,
+.lh_alone a {
+	border-top:1px solid #CBCBCB;
+}
+
+.lh_top_small a,
+.lh_none_small a,
+.lh_bottom_small a {
+	display:block;
+	padding-left:10px;
+
+	width:213px;
+	
+	border-left:1px solid #CBCBCB;
+	border-right:1px solid #CBCBCB;
+	line-height:26px;
+	text-decoration:none;
+	font-size:1.2em;
+	
+	background:url(images/menu_color.gif) left -160px repeat-x;
+}
+.lh_alonetop a.two-lines,
+.lh_none a.two-lines,
+.lh_bottom a.two-lines,
+.lh_alone a.two-lines {
+	padding-top:5px;
+	/*height:35px;*/
+	line-height:16px;
+}
+.lh_alonetop a:hover,
+.lh_none a:hover,
+.lh_bottom a:hover,
+.lh_alone a:hover {
+	color:#000000;
+	background:url(images/menu_color/bluewhite.jpg) left bottom repeat-x;
+}
+
+.lh_top_small a:hover,
+.lh_none_small a:hover,
+.lh_bottom_small a:hover {
+	color:#000000;
+	background:url(images/menu_color.gif) left -186px repeat-x;
+}
+
+.lh_none#pink-menu span#border-pink{
+	float:left;
+	height:100%;
+	width:0px;
+	padding-left:6px;
+	background:url(images/menu_color/pink.jpg) left bottom repeat-x #ff85cf;
+}
+
+.lh_none#orange-menu span#border-orange{
+	float:left;
+	height:100%;
+	width:0px;
+	padding-left:6px;
+	background:url(images/menu_color/orange.jpg) left bottom repeat-x #ffd680;
+}
+
+.lh_none#pink-menu a,
+.lh_none#orange-menu a{
+	width:208px;
+	text-align:center;
+	border-left:none;
+}
+
+.lh_none#pink-menu a:hover {
+	background:url(images/menu_color/pinkwhite.jpg) left bottom repeat-x #fff;
+}
+.lh_none#orange-menu a:hover {
+	background:url(images/menu_color/orangewhite.jpg) left bottom repeat-x #fff;
+}
+.lh_none#pink-menu a > span {
+	color:#EA2D81;
+	font-weight:bold;
+}
+.lh_none#orange-menu a > span {
+	color:#F58B00;
+	font-weight:bold;
+}
+.lh_none#check1 a,
+.lh_none#check2 a{
+	background:url(images/check.gif) left top no-repeat;
+}
+
+.lh_none#check1 a:hover,
+.lh_none#check2 a:hover{
+	background:url(images/check.gif) left bottom no-repeat;
+}
+
+/****************************************
+step - 2015.02.24 改修
+****************************************/
+table.pageLinkBox {
+	width:100%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;	
+}	
+table.pageLinkBox td {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:3px;
+}
+table.pageLinkBox td.leftSide,
+table.pageLinkBox td.rightSide {
+	width:40%;
+}
+table.pageLinkBox td a {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	display:block;	
+	text-decoration:none;
+}
+table.pageLinkBox td a span {
+	display:block;
+	font-size:80%;
+}
+table.pageLinkBox td.leftSide a,
+table.pageLinkBox td.rightSide a {
+	color:#fff;
+	font-weight:bold;
+	font-size:140%;
+	background-color:#ff942a;
+}
+table.pageLinkBox td.leftSide a:hover,
+table.pageLinkBox td.rightSide a:hover { background-color:#DF640A; }
+table.pageLinkBox td.leftSide a {
+	padding:5px 20px 5px 40px;
+	background:url(../images/step/icon_singleArrow_l.png) no-repeat 5% center #ff942a;
+	-webkit-background-size:12px 22px;
+	-moz-background-size:12px 22px;
+	background-size:12px 22px;
+}
+table.pageLinkBox td.rightSide a {
+	padding:5px 40px 5px 20px;
+	background:url(../images/step/icon_singleArrow_r.png) no-repeat 95% center #ff942a;
+	-webkit-background-size:12px 22px;
+	-moz-background-size:12px 22px;
+	background-size:12px 22px;
+}
+table.pageLinkBox td.toTopLink a {
+	background-color:#dfdfde;
+	color:#7b7c7c;
+	font-size:65%;
+	text-align:center;
+	padding:5px 1px;
+}
+table.pageLinkBox td.toTopLink a:hover {
+	background-color:#A8A8A8;
+	color:#fff;
+}	
+div.pageLinkBox2 {
+	margin:10px auto;
+	width:95%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+div.pageLinkBox2 a.nextStep {
+	background:url(../images/step/icon_doubleArrow.png) no-repeat 90% center #ff942a;
+	-webkit-background-size:23px 22px;
+	-moz-background-size:23px 22px;
+	background-size:23px 22px;
+	display:block;
+	text-align:center;
+	padding:12px;
+	margin-bottom:15px;
+	color:#fff;
+	font-size:160%;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	text-decoration:none;
+	font-weight:bold;
+}
+div.pageLinkBox2 > p {
+	color: #333;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+div.pageLinkBox2 ul.linkList {
+	border-radius:3px;
+	border:2px solid #ff942a;
+}
+div.pageLinkBox2 ul.linkList li a {
+	display:block;
+	border-bottom:2px solid #ff942a;
+	padding:8px 10px 8px 30px;
+	color:#333;
+	font-size:120%;
+}
+div.pageLinkBox2 ul.linkList li a:hover { background-color:#fde2ac; text-decoration:underline; }
+div.pageLinkBox2 ul.linkList li.active {
+	background:url(../images/step/icon_singleOrange.png) no-repeat 12px center #fde2ac;
+	-webkit-background-size:9px 13px;
+	-moz-background-size:9px 13px;
+	background-size:9px 13px;
+	border-bottom:2px solid #f08638;
+	padding:8px 10px 8px 30px;
+	color:#787778;
+	font-size:120%;
+}
+div.pageLinkBox2 ul.linkList li:last-child a,
+div.pageLinkBox2 ul.linkList li.step8 { border-bottom:none; }
+#maincontent.stepPage h2.sec-title { margin-top:20px; }
+.btnMemberTop, .btnlogout {
+    width: 180px;
+    height: 25px;
+    background-color: #FFF;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btnMemberTop a, .btnlogout a {
+    text-decoration: none;
+    color: #1D2088;
+}
+.btnMemberTop:hover, .btnlogout:hover {
+    background-color: #89B9ED;
+}

@@ -1,0 +1,135 @@
+
+@media all and (orientation:portrait) {
+/* Index Slider */
+	div.img_container,
+	div.slider_main_div {
+		height: 100px;
+	}
+/* End of Index Slider */
+}
+
+@media all and (orientation:landscape) {
+/* Index Slider */
+	div.img_container,
+	div.slider_main_div {
+		height: 130px;
+	}
+/* End of Index Slider */
+
+
+}
+
+div.slider_content {
+	color: black;
+	display: block;
+	display: -webkit-box;
+	height: 60px;
+	margin: 0 auto;
+	font-size: 10px;
+	line-height: 1.5;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.img_container {
+	background-size: 100% auto;
+	/* background-size: 100% 285%; */
+	position: relative;
+	float: left; 
+	width: 50%; 
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.school_tag p,
+div.main_newentry div.bgtag p,
+div.post_img div.bgtag p {
+	margin: 0px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	word-wrap: break-word;
+	text-align: center;
+	line-height: 1;
+}
+
+div.school_tag,
+div.main_newentry div.bgtag {
+	width: 60px;
+	position: absolute;
+	text-align: center;
+	padding-top: 50px;
+	padding-right: 60px;
+	padding-left: 60px;
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	z-index: 5 !important;
+	top: -25px;
+	left: -80px;
+}
+div.post_img div.bgtag {
+	width: 60px;
+	position: relative;
+	text-align: center;
+	padding-top: 50px;
+	padding-right: 60px;
+	padding-left: 60px;
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	z-index: 5 !important;
+	left: -80px;
+	top: -25px;
+}
+
+div.slider_detail {
+	float: right;
+	width: 48%;
+	font-size: 10px;
+	line-height: 1.5;
+	text-align: left;
+	padding: 2px;
+}
+
+div.slider_post_title,
+div.new_entry_title,
+div.japan_newentry_title { /*edit*/
+	display: block;
+	display: -webkit-box;
+	height: 36px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.2;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+.hero-unit .slick-dots {
+    bottom: -50px;
+}
+.hero-unit .slick-prev {
+    margin-top: 131px;
+}
+.hero-unit .slick-next {
+    margin-top: 131px;
+}
+.hero-unit .school_tag {
+    width: initial;
+    /*padding: 60px 30px 0;*/
+    top: -25px;
+    left: -75px;
+    z-index:9999;
+    display:none;
+}
+.hero-unit .school_tag p { display:inline-block !important; }
+.menuBox .hero-unit div a {
+    background : none;
+    padding: 20px 0;
+}

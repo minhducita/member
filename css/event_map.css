@@ -1,0 +1,102 @@
+@media (min-width:800px){
+	#top-main{width:100%;}
+}
+@media (max-width:600px){
+	.button_office:nth-child(2n){margin:6px 0px 7px 0px;}
+}
+@media (max-width:360px){
+	.button_office .access{
+		font-size:11px !important;
+	}
+	.info_event .event_link li{
+		width:29%;
+	}
+}
+@media (max-width:325px){
+	.button_office .access{
+		font-size:10px !important;
+	}
+}
+@media (min-width:361px){
+	.info_event .event_link li{width:30%;}
+}
+.button_office.fullwidth{
+	width: 100%;
+    text-align: center;
+}
+.button_office{
+		width:48%;
+	}
+	.button_office .access{
+		width:83%;
+		text-align:center;
+	}
+#top-main img{float:none !important}
+.info_event{
+	background:url("../images/event_map/bg.png");
+	padding:10px;
+	position:relative;
+	border:10px solid #eeeeee;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align:center;
+}
+.button_office{margin: 6px 10px 7px 0; float:left;}
+.info_event .btn-event-map{margin-top:10px}
+.info_event .i_check{
+	position:absolute;
+    top: -13px;
+    left: -17px;
+	width:65px;
+}
+.info_event .line_red{
+	line-height:18px;
+	display:block;
+	margin:auto;
+	font-size:20px;
+	padding-bottom:10px;
+	background:url("../images/event_map/line_red.png")  bottom;
+	background-repeat:repeat-x;
+	text-align:center;
+	margin-bottom:10px;
+	font-weight:bold;
+	width:80%;
+}
+.info_event .line_blue_size13{
+	color:#0044bd;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+}
+.info_event .line_blue_size24{
+	font-size:25px;
+	color:#0044bd;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:15px;
+}
+.info_event .content{
+	line-height:25px;
+	font-size:12px;
+}
+.info_event .event_link li{
+	
+	float:left;
+	text-align:center;
+	margin:5px;
+}
+.info_event .flag{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.info_event .flag li{
+	
+	float:left;
+	width:20%;
+}
+.info_event .btn-event-map{
+	margin-top:10px;
+}
+.sec-title{margin-top:15px;margin-bottom:10px;}
+.aiu-link-block,.aiu-link-block p,.cpp-link-block{text-align:center;}
